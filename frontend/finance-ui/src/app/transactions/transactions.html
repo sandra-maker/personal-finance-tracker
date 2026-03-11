@@ -1,0 +1,12 @@
+<h2>Add Transaction</h2>
+
+<input placeholder="Amount" #amount>
+
+<select #type>
+<option value="income">Income</option>
+<option value="expense">Expense</option>
+</select>
+
+<button (click)="add(amount.value, type.value)">
+Add
+</button>
